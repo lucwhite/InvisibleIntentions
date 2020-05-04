@@ -6,11 +6,11 @@ var colorVals = [0,0,0];
 // Define configuration options
 const opts = {
   identity: {
-    username: "plant_b0t",
-    password: "pohh59apouwq2n1wlg0lagzh208l7e"
+    username: {username},
+    password: {oauthKey}
   },
   channels: [
-    "liveloudplants"
+    {channel}
   ]
 };
 // Create a client with our options
