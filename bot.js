@@ -6,11 +6,11 @@ var colorVals = [0,0,0];
 // Define configuration options
 const opts = {
   identity: {
-    username: {username},
-    password: {oauthKey}
+    username: "plant_b0t",
+    password: "pohh59apouwq2n1wlg0lagzh208l7e"
   },
   channels: [
-    {channel}
+    "liveloudplants"
   ]
 };
 // Create a client with our options
@@ -55,3 +55,7 @@ function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
   maxApi.outlet(`* Connected to ${addr}:${port}`);
 }
+
+maxApi.addHandler("comm", () => {
+	client.action("liveloudplants", "'!info' for more information, '!color val val val' (values 0-255) to change the color of the RGB LEDS.`");
+});
