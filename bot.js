@@ -10,7 +10,7 @@ const opts = {
     password: <password>
   },
   channels: [
-    "liveloudplants"
+    <channel_name>
   ]
 };
 // Create a client with our options
